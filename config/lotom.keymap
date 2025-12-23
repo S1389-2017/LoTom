@@ -71,10 +71,10 @@
         default_layer {
             bindings = <
 &kp TAB             &kp ESCAPE
-&kp Q               &kp W         &kp E             &kp R           &kp T        &kp KP_EQUAL   &kp PLUS       &kp Y            &kp U                    &kp I         &kp O    &kp P
-&kp A               &kp S         &kp D             &kp F           &kp G        &kp BACKSLASH  &kp TILDE      &kp H            &kp J                    &kp K         &kp L    &kp MINUS
-&mt Z LEFT_CONTROL  &kp X         &kp C             &kp V           &kp B        &kp COLON      &kp SEMICOLON  &kp N            &kp M                    &kp COMMA     &kp DOT  &lt 2 SLASH
-&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE  &kp LG(SPACE)  &kp ENTER      &lt 3 BACKSPACE  &mt CAPSLOCK KP_NUMLOCK  &lt 6 DELETE
+&kp Q               &kp W         &kp E             &kp R           &kp T        &kp KP_EQUAL      &kp PLUS           &kp Y            &kp U          &kp I         &kp O    &kp P
+&kp A               &kp S         &kp D             &kp F           &kp G        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp H            &kp J          &kp K         &kp L    &kp MINUS
+&mt Z LEFT_CONTROL  &kp X         &kp C             &kp V           &kp B        &kp COLON         &kp SEMICOLON      &kp N            &kp M          &kp COMMA     &kp DOT  &lt 2 SLASH
+&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE  &kp LG(SPACE)     &kp ENTER          &lt 5 BACKSPACE  &kp BACKSLASH  &lt 6 DELETE
             >;
 
             sensor-bindings = <
@@ -130,11 +130,11 @@
 
         NUM {
             bindings = <
-&trans                   &trans
-&kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &trans  &trans  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
-&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans  &trans  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans  &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans                   &trans        &trans        &trans                &trans        &trans  &trans  &kp LEFT_SHIFT   &trans        &trans
+&kp CAPS         &kp KP_NUMLOCK
+&kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3  &kp LG(LS(NUMBER_4))  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6    &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
+&kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DLLR              &kp PRCNT     &trans  &trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp SQT
+&kp LC(Z)        &kp LC(X)       &kp LC(C)     &kp LC(V)             &kp LC(A)     &trans  &trans  &kp NUMBER_0    &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3          &kp EQUAL
+&trans           &trans          &trans        &trans                &trans        &trans  &trans  &kp LEFT_SHIFT  &kp TILDE      &kp GRAVE
             >;
 
             sensor-bindings = <
@@ -146,10 +146,10 @@
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F1  &kp F2  &kp F3   &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F13  &kp F6  &kp F7  &kp F8   &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans   &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &kp F12
+&kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp END         &kp HOME         &trans  &trans          &kp UP_ARROW    &trans     &trans
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp PG_DN       &kp PG_UP        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &trans  &msc SCRL_DOWN  &msc SCRL_UP     &trans  &trans          &trans          &trans     &trans
+&trans  &trans   &trans   &trans   &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans          &trans
             >;
 
             sensor-bindings = <
